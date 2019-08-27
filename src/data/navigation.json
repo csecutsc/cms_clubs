@@ -1,0 +1,11 @@
+[
+	{
+		"name": "Home",
+		"path": "/"
+	},
+	{
+		"name": "Calendar",
+		"path": "https://bongo.cat",
+		"external": true
+	}
+]

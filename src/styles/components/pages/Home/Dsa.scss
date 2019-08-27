@@ -1,0 +1,10 @@
+@import '../../../variables';
+@import '../../../mixins';
+
+.dsa {
+    z-index: 1;
+
+    &__groups {
+        padding: 0;
+    }
+}
