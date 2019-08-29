@@ -6,8 +6,58 @@ import { FormatDate } from '@util';
 // Assume we're gonna fetch from database or google calendar API anyways
 const _events = [
     {
-        name: 'Frosh',
-        description: 'Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum.',
+        name: 'UTSC Welcome Day',
+        description: '',
+        from: '2019-08-26T18:20:20.225Z',
+        to: '2019-08-29T18:20:20.225Z',
+        groups: [
+            'DEPARTMENT OF STUDENT LIFE',
+            'AMACSS'
+        ]
+    },
+    {
+        name: 'First Year Mix & Mingle',
+        description: '',
+        from: '2019-08-26T18:20:20.225Z',
+        to: '2019-08-29T18:20:20.225Z',
+        groups: [
+            'AMACSS',
+            'CSEC',
+            'WiCSM'
+        ]
+    },
+    {
+        name: 'HubSpot Ice Cream Social',
+        description: 'Start your year off by networking with HubSpot over some ice cream. Learn more about this software company and how you can land an internship or full time opportunity in the States!',
+        from: '2019-08-26T18:20:20.225Z',
+        to: '2019-08-29T18:20:20.225Z',
+        groups: [
+            'WiCSM',
+            'HubSpot'
+        ]
+    },
+    {
+        name: 'WiCSM Mix and Mingle',
+        description: 'Meet your fellow first year CMS students, participate in fun games and ice-breakers, and get involved with WiCSM with some free pizza!',
+        from: '2019-08-26T18:20:20.225Z',
+        to: '2019-08-29T18:20:20.225Z',
+        groups: [
+            'WiCSM',
+            'HubSpot'
+        ]
+    },
+    {
+        name: 'CSEC Orientation',
+        description: 'Learn about the Computer Science Enrichment Club and the upcoming projects and events to accelerate your career!',
+        from: '2019-08-26T18:20:20.225Z',
+        to: '2019-08-29T18:20:20.225Z',
+        groups: [
+            'CSEC'
+        ]
+    },
+    {
+        name: 'Gaming Night 1.0',
+        description: '',
         from: '2019-08-26T18:20:20.225Z',
         to: '2019-08-29T18:20:20.225Z',
         groups: [
@@ -15,17 +65,8 @@ const _events = [
         ]
     },
     {
-        name: 'Frosh',
-        description: 'Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum.',
-        from: '2019-08-26T18:20:20.225Z',
-        to: '2019-08-29T18:20:20.225Z',
-        groups: [
-            'AMACSS'
-        ]
-    },
-    {
-        name: 'Frosh',
-        description: 'Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum. Lorem Ipsum foreign lipsum.',
+        name: 'First Year Rep Elections',
+        description: '',
         from: '2019-08-26T18:20:20.225Z',
         to: '2019-08-29T18:20:20.225Z',
         groups: [

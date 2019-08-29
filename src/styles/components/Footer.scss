@@ -2,8 +2,8 @@
 @import '../variables';
 
 .footer {
-    background-color: $BLACK;
-    color: white;
+    background-color: #f5f5f5;
+    color: $BLACK;
     $self: &;
 
     &__container {

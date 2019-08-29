@@ -26,7 +26,7 @@ const createIcons = () => {
 
         res.push(
             <span key={ i } style={ style } className={`landing__icon-wrapper${ invert }`}>
-                <Icon className='landing__icon'/>
+                <Icon fill='#321656' className='landing__icon'/>
             </span>
         );
     }

@@ -1,19 +1,10 @@
 [
 	{
-		"name": "AMACSS",
-        "href": "https://bongo.cat",
-        "content": "Curabitur pharetra dui vel pretium ultricies. Suspendisse finibus diam sem, mattis consequat orci dictum at. Integer ullamcorper feugiat dui congue rhoncus. Sed eu nunc a tellus consequat lobortis euismod commodo metus. Quisque blandit arcu in interdum convallis. Nulla consectetur sapien in hendrerit tristique. Suspendisse potenti.",
+		"name": "Association of Mathematical and Computer Science Students (AMACSS)",
+        "href": "https://amacss.org/",
+        "content": "The purpose of AMACSS is to represent, advocate for and enhance the university experience of students in the Department of Computer and Mathematical Sciences. The AMACSS executive team, all current students, work to enhance the educational, recreational, social and cultural environment of the University of Toronto at Scarborough.",
         "image": "https://cdn.shopify.com/s/files/1/1825/4023/products/IMG_8218.JPG?v=1540657798",
-        "facebook": "https://bongo.cat",
-        "email": "https://bongo.cat",
-        "discord": "https://bongo.cat"
-	},
-	{
-		"name": "IDK",
-        "href": "https://bongo.cat",
-        "content": "Curabitur pharetra dui vel pretium ultricies. Suspendisse finibus diam sem, mattis consequat orci dictum at. Integer ullamcorper feugiat dui congue rhoncus. Sed eu nunc a tellus consequat lobortis euismod commodo metus. Quisque blandit arcu in interdum convallis. Nulla consectetur sapien in hendrerit tristique. Suspendisse potenti.",
-        "image": "https://cdn.shopify.com/s/files/1/1825/4023/products/IMG_8218.JPG?v=1540657798",
-        "email": "https://bongo.cat",
-        "discord": "https://bongo.cat"
+        "facebook": "https://www.facebook.com/AMACSSUTSC",
+        "email": "president@amacss.org"
 	}
 ]

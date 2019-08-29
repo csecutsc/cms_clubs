@@ -13,7 +13,7 @@ $SPEED_: SLOW;
     $self: &;
 
     &--light {
-        color: white;
+        color: $BLACK;
     }
 
     &--scrolled {

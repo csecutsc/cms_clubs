@@ -1,18 +1,19 @@
 [
 	{
-		"name": "CSEC",
+		"name": "COMPUTER SCIENCE ENRICHMENT CLUB (CSEC)",
         "href": "https://bongo.cat",
-        "content": "Curabitur pharetra dui vel pretium ultricies. Suspendisse finibus diam sem, mattis consequat orci dictum at. Integer ullamcorper feugiat dui congue rhoncus. Sed eu nunc a tellus consequat lobortis euismod commodo metus. Quisque blandit arcu in interdum convallis. Nulla consectetur sapien in hendrerit tristique. Suspendisse potenti.",
-        "image": "https://cdn.shopify.com/s/files/1/1825/4023/products/IMG_8218.JPG?v=1540657798",
-        "facebook": "https://bongo.cat",
+        "content": "The Computer Science Enrichment Club is a student-run group that focuses on helping students with a passion for Computer Science take the next steps in their professional careers.",
+        "image": "images/csec.png",
+        "facebook": "https://www.facebook.com/groups/csec2016.utsc/",
         "email": "https://bongo.cat",
         "discord": "https://bongo.cat"
 	},
 	{
-		"name": "WICSM",
-        "href": "https://bongo.cat",
-        "content": "Curabitur pharetra dui vel pretium ultricies. Suspendisse finibus diam sem, mattis consequat orci dictum at. Integer ullamcorper feugiat dui congue rhoncus. Sed eu nunc a tellus consequat lobortis euismod commodo metus. Quisque blandit arcu in interdum convallis. Nulla consectetur sapien in hendrerit tristique. Suspendisse potenti.",
+		"name": "WOMEN IN COMPUTER SCIENCE, STATISTICS AND MATHEMATICS (WiCSM)",
+        "href": "https://www.facebook.com/WiCSM.UTSC/",
+        "content": "WiCSM creates communal, academic, and skillful events to create safe place for students to come together & socialize through events. Our main goal is to encourage more women to pursue a degree in Computer Science, Statistics & Mathematics.",
         "image": "https://cdn.shopify.com/s/files/1/1825/4023/products/IMG_8218.JPG?v=1540657798",
+        "facebook": "https://www.facebook.com/WiCSM.UTSC/",
         "email": "https://bongo.cat",
         "discord": "https://bongo.cat"
 	}

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Computer Science Enrichment Club',
-    keywords: ['CSEC', 'CSEC-W', 'CSEC-A', 'CSEC-S', 'Computer Science Enrichment Club', 'AMACSS', 'UTSC', '~csec', 'cs', 'algorithms', 'development', 'club', 'UTSC CS', 'UofT CS', 'University of Toronto', 'Scarborough', 'Computer Science', 'Programming', 'Programming Club', 'UTSC Programming Club', 'UTSC Computer Science Clubs', 'UTSC Computer Science', 'Nick\'s Programming Club', 'AMACSS'],
-    description: 'Welcome to CSEC. The Computer Science Enrichment Club is a student-run group that focuses on helping students with a passion for Computer Science take the next steps in their career.',
+    title: 'CMSClubs',
+    keywords: ['CSEC', 'Computer Science Enrichment Club', 'AMACSS', 'UTSC', 'cs', 'UTSC CS', 'UofT CS', 'University of Toronto', 'Scarborough', 'Computer Science'],
+    description: 'Your gateway to all things Computer Science, Statistics, and Mathematics at UTSC student CMS clubs.',
     author: 'Frederic Pun'
   },
   plugins: [
