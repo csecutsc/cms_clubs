@@ -6,11 +6,11 @@ module.exports = {
     author: 'Frederic Pun'
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',
     'gatsby-plugin-layout',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',

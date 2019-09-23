@@ -38,7 +38,7 @@ export const Footer = memo(() => {
                 <div className='footer__content'>
                     <h2 className='footer__title'>CMSClubs</h2>
                     <p className='footer__text'>
-                        <span>1265 Military Trail</span> 
+                        <span>1095 Military Trail</span> 
                         <span>Toronto, ON</span>
                         <span>M1C 1A4</span>
                     </p>
@@ -89,7 +89,7 @@ export const Footer = memo(() => {
                 }
             </div>
             <div className='footer__row footer__row--aside'>
-                <p className='footer__aside footer__aside--push'>© CSEC 2019. All Rights Reserved</p>
+                <p className='footer__aside footer__aside--push'>© CSEC Development Team 2019. All Rights Reserved</p>
                 <p className='footer__aside'>
                     Made by Frederic Pun <span role='img' aria-label='Shiba Inu Emoji'>🐕</span> &amp; Kevin Shen <span role='img' aria-label='House Cat Emoji'>🐧</span>
                 </p>

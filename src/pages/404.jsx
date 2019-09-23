@@ -4,7 +4,7 @@ import '@styles/pages/404.scss';
 
 const NotFoundPage = () => (
     <Container tag='main' block='nf'>
-        <h1>REEE</h1>
+        <h1>Oppsie Whoopsie</h1>
     </Container>
 );
 

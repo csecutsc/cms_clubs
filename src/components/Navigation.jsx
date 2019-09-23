@@ -60,7 +60,7 @@ export const Navigation = memo(({ light }) => {
             [ scrolled && !mobile && 'scrolled', (light || mobile) && 'light', mobile && 'show' ]
         } tag='nav'>
             <Link to='/' className='nav__logo'>
-                <Logo className='nav__icon'/>
+                <h4 className='nav__icon'>CMSClubs</h4>
             </Link>
             <button onClick={ () => setMobile(!mobile) } className='nav__bars'>
                 <div className='nav__bar nav__bar--top'/>

@@ -8,9 +8,16 @@ const query = graphql`
         data: allExtraJson {
             nodes {
                 name
+                secondary
                 href
                 content
-                image
+                image {
+                    childImageSharp {
+                        fluid(maxWidth: 500) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
                 facebook
                 email
                 discord

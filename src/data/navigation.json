@@ -5,7 +5,7 @@
 	},
 	{
 		"name": "Calendar",
-		"path": "https://bongo.cat",
-		"external": true
+		"path": "/calendar",
+		"external": false
 	}
 ]

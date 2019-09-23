@@ -42,7 +42,7 @@ export const Landing = () => {
             <div className='landing__content'>
                 <h1 className='landing__title'>CMSClubs</h1>
                 <p className='landing__text'>
-                    Your gateway to all things Computer Science, Statistics, and Mathematics at UTSC student clubs.
+                    The portal to all Department of Computer and Mathematical Sciences clubs and events at UTSC.
                 </p>
             </div>
             { icons }

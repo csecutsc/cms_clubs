@@ -35,8 +35,9 @@ $SPEED_: SLOW;
         width: 30px;
         height: 30px;
 
-        #{ $self }--light &, #{ $self }--scrolled & {
-            fill: white;
+        #{ $self }--scrolled & {
+            display: block;
+            color: white;
         }
     }
 
@@ -144,11 +145,12 @@ $SPEED_: SLOW;
             @include position(fixed);
             flex-direction: column;
             align-items: flex-end;
-            background-color: $BLACK;
+            background-color: white;
             padding: 110px 48px 20px;
             text-align: right;
             pointer-events: none;
             opacity: 0;
+
 
             #{ $self }--show & {
                 opacity: 1;
@@ -165,6 +167,7 @@ $SPEED_: SLOW;
 
         &__item {
             padding-left: 20px;
+            color: $BLACK;
         }
     }
 }
