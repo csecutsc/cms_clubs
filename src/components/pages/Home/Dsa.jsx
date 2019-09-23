@@ -29,7 +29,6 @@ const query = graphql`
 
 export const Dsa = () => {
     const { data } = useStaticQuery(query);
-    console.log(data);
     return (
         <Container tag='section' block='dsa' className='home__section'>
             <h2 className='dsa__title'>Department Student Association (DSA)</h2>

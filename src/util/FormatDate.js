@@ -30,7 +30,7 @@ export class FormatDate {
     }
 
     getDay = (full, append = '') => {
-        const d = this.date.getDay();
+        const d = this.date.getDay() + 1;
         let s = '';
         if (full) {
             switch(d) {
@@ -66,6 +66,15 @@ export class FormatDate {
                 s = m; break;
         }
         this.str += s + append;
+        return this;
+    }
+
+    getTime = (period = true, append = '') => {
+        const h = this.date.getHours();
+        const m = this.date.getMinutes();
+        const p = h >= 12 ? 'PM' : 'AM';
+
+        this.str += `${period? (h % 12 || 12) : h}:${m.toString().padStart(2, 0)} ${period ? p : ''}`;
         return this;
     }
 
