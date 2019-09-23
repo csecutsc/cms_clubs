@@ -1,10 +1,6 @@
 import React from 'react';
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import timeGridPlugin from '@fullcalendar/timegrid'
-import interactionPlugin from '@fullcalendar/interaction'
-import googleCalendar from '@fullcalendar/google-calendar'
 import { Container } from '@components';
+import Loadable from 'react-loadable';
 import '@styles/pages/Calendar.scss';
 import '@styles/components/pages/Calendar/Calendar.scss'
 
@@ -14,8 +10,16 @@ export default class CalendarPage extends React.Component {
     state = {
         calendarWeekends: true,
     }
+
     render() {
+        const LoadableCallendar = Loadable({
+            loader: () => import('../components/pages/Calendar/EventCalendar'),
+            loading() {
+                return <div>Loading...</div>
+            }
+        })
         return (
+
             <Container tag='main' block='gallery'>
                 <h1 className='gallery__title'>Calendar</h1>
                 <p className='gallery__text'>All the events that CMS clubs are hosting this year. Click the button below to add it your own calendar</p>
@@ -28,21 +32,7 @@ export default class CalendarPage extends React.Component {
                             Add Google Calendar
                 </a>
                     </div>
-                    <div className='demo-app-calendar'>
-                        <FullCalendar
-                            defaultView="dayGridMonth"
-                            header={{
-                                left: 'prev,next today',
-                                center: 'title',
-                                right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
-                            }}
-                            plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin, googleCalendar]}
-                            ref={this.calendarComponentRef}
-                            weekends={this.state.calendarWeekends}
-                            events='v2ic42okcmfrf95468mgu2hs8g@group.calendar.google.com'
-                            googleCalendarApiKey='AIzaSyCb02sStRI4-i35sG2UMchOrs7pKDBrLq0'
-                        />
-                    </div>
+                    <LoadableCallendar />
                 </div>
             </Container>
         );

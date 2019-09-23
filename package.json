@@ -20,7 +20,7 @@
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.5",
     "gatsby-plugin-react-svg": "^2.1.2",
-    "gatsby-plugin-sass": "^2.1.12",
+    "gatsby-plugin-sass": "^2.1.15",
     "gatsby-plugin-sharp": "^2.2.18",
     "gatsby-plugin-webpack-bundle-analyzer": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.18",
@@ -33,7 +33,8 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "react-icons": "^3.6.1"
+    "react-icons": "^3.6.1",
+    "react-loadable": "^5.5.0"
   },
   "keywords": [
     "gatsby"

@@ -1,7 +1,7 @@
 @import '../variables';
 @import '../mixins';
 
-.gallery {
+.calendar {
     padding: 120px 0 60px;
     min-height: 100vh;
     $self: &;
@@ -55,14 +55,10 @@
         width: 100%;
         height: auto;
     }
-
-    &__loading {
-
-    }
 }
 
 @include media(TABLET) {
-    .gallery {
+    .calendar {
         &__image-item {
             max-width: calc(50% - 20px);
         }
@@ -70,7 +66,7 @@
 }
 
 @include media(PHONE) {
-    .gallery {
+    .calendar {
         &__image-item {
             max-width: calc(100% - 20px);
         }
