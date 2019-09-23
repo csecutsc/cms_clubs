@@ -45,7 +45,8 @@ export const Events = () => {
             <ul className='events__list'>
                 {
                     !loading ? (
-                        data.items.sort((a,b) => { return new Date(a.start.dateTime) - new Date(b.start.dateTime)})
+                        data.items.filter(({start}) => new Date(start.dateTime) >= (Date.now() - 1))
+                        .sort((a,b) => { return new Date(a.start.dateTime) - new Date(b.start.dateTime)})
                         .map(({ summary, description, start, end, location }, i) => {
                             const [ groups, text ] = description.split('|');
                             return (
