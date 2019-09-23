@@ -57,6 +57,12 @@
             margin-top: 0;
             font-size: 0.95rem;
         }
+
+        &-location {
+            color: $PRIMARY;
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
     }
 
     &__groups {

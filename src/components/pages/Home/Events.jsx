@@ -45,7 +45,8 @@ export const Events = () => {
             <ul className='events__list'>
                 {
                     !loading ? (
-                        data.items.map(({ summary, description, start, end }, i) => {
+                        data.items.sort((a,b) => { return new Date(a.start.dateTime) - new Date(b.start.dateTime)})
+                        .map(({ summary, description, start, end, location }, i) => {
                             const [ groups, text ] = description.split('|');
                             return (
                                 <li
@@ -55,7 +56,10 @@ export const Events = () => {
                                     <div className='events__item-header'>
                                         <h3 className='events__item-title'>{summary}</h3>
                                         <span className='events__item-date'>
-                                            {dateRange(start.dateTime, end.dateTime)}
+                                            {dateRange(start.dateTime, end.dateTime)}&nbsp;
+                                        </span>
+                                        <span className='events__item-location'>
+                                            {location}
                                         </span>
                                     </div>
                                     <ul className='events__groups'>
