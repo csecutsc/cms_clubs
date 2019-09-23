@@ -11,8 +11,6 @@ const dateRange = (from, to) => {
     return `${format(f)} - ${t.getTime().format()}`;
 };
 
-console.log(process.env);
-
 const CALENDAR_URL = encodeURI(
     `https://www.googleapis.com/calendar/v3/calendars/${
         process.env.GATSBY_CALENDAR_ID
@@ -47,7 +45,7 @@ export const Events = () => {
             <ul className='events__list'>
                 {
                     !loading ? (
-                        data.items.map(({ summary, description, start, end, location }, i) => {
+                        data.items.map(({ summary, description, start, end }, i) => {
                             const [ groups, text ] = description.split('|');
                             return (
                                 <li
