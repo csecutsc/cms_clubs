@@ -30,7 +30,7 @@ export class FormatDate {
     }
 
     getDay = (full, append = '') => {
-        const d = this.date.getDay() + 1;
+        const d = this.date.getDate();
         let s = '';
         if (full) {
             switch(d) {
