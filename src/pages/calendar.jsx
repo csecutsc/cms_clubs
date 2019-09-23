@@ -20,9 +20,9 @@ export default class CalendarPage extends React.Component {
         })
         return (
 
-            <Container tag='main' block='gallery'>
-                <h1 className='gallery__title'>Calendar</h1>
-                <p className='gallery__text'>All the events that CMS clubs are hosting this year. Click the button below to add it your own calendar</p>
+            <Container tag='main' block='calendar'>
+                <h1 className='calendar__title'>Calendar</h1>
+                <p className='calendar__text'>All the events that CMS clubs are hosting this year. Click the button below to add it your own calendar</p>
                 <div className='demo-app'>
                     <div className='demo-app-top'>
                         <a className='events__link-button'
