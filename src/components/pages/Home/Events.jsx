@@ -13,9 +13,9 @@ const dateRange = (from, to) => {
 
 const CALENDAR_URL = encodeURI(
     `https://www.googleapis.com/calendar/v3/calendars/${
-        process.env.GATSBY_CALENDAR_ID
+    process.env.GATSBY_CALENDAR_ID
     }/events?key=${
-        process.env.GATSBY_CALENDAR_KEY
+    process.env.GATSBY_CALENDAR_KEY
     }`
 );
 
@@ -45,40 +45,40 @@ export const Events = () => {
             <ul className='events__list'>
                 {
                     !loading ? (
-                        data.items.filter(({start}) => new Date(start.dateTime) >= (Date.now() - 1))
-                        .sort((a,b) => { return new Date(a.start.dateTime) - new Date(b.start.dateTime)})
-                        .map(({ summary, description, start, end, location }, i) => {
-                            const [ groups, text ] = description.split('|');
-                            return (
-                                <li
-                                    className='events__item'
-                                    key={i}
-                                >
-                                    <div className='events__item-header'>
-                                        <h3 className='events__item-title'>{summary}</h3>
-                                        <span className='events__item-date'>
-                                            {dateRange(start.dateTime, end.dateTime)}&nbsp;
+                        data.items.filter(({ start }) => { const d = new Date(); return new Date(start.dateTime) >= d.setDate(d.getDate() - 1)})
+                            .sort((a, b) => { return new Date(a.start.dateTime) - new Date(b.start.dateTime) })
+                            .map(({ summary, description, start, end, location }, i) => {
+                                const [groups, text] = description.split('|');
+                                return (
+                                    <li
+                                        className='events__item'
+                                        key={i}
+                                    >
+                                        <div className='events__item-header'>
+                                            <h3 className='events__item-title'>{summary}</h3>
+                                            <span className='events__item-date'>
+                                                {dateRange(start.dateTime, end.dateTime)}&nbsp;
                                         </span>
-                                        <span className='events__item-location'>
-                                            {location}
-                                        </span>
-                                    </div>
-                                    <ul className='events__groups'>
-                                        {
-                                            groups.split(',').map((group, j) => (
-                                                <li key={j} className='events__group'>
-                                                    {group}
-                                                </li>
-                                            ))
-                                        }
-                                    </ul>
-                                    <p
-                                        className='events__item-text'
-                                        dangerouslySetInnerHTML={{ __html: text.replace(/<br>/g, ' ') }}
-                                    />
-                                </li>
-                            );
-                        })
+                                            <span className='events__item-location'>
+                                                {location}
+                                            </span>
+                                        </div>
+                                        <ul className='events__groups'>
+                                            {
+                                                groups.split(',').map((group, j) => (
+                                                    <li key={j} className='events__group'>
+                                                        {group}
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                        <p
+                                            className='events__item-text'
+                                            dangerouslySetInnerHTML={{ __html: text.replace(/<br>/g, ' ') }}
+                                        />
+                                    </li>
+                                );
+                            })
                     ) : (
                             <li className='events__loading'>Loading...</li>
                         )
