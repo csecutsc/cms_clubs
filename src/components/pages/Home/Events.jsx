@@ -45,10 +45,14 @@ export const Events = () => {
             <ul className='events__list'>
                 {
                     !loading ? (
-                        data.items.filter(({ start }) => { const d = new Date(); return new Date(start.dateTime) >= d.setDate(d.getDate() - 1)})
+                        data.items.filter(({ start }) => {
+                            const d = new Date();
+                            return new Date(start.dateTime) >= d.setDate(d.getDate() - 1)
+                        })
                             .sort((a, b) => { return new Date(a.start.dateTime) - new Date(b.start.dateTime) })
-                            .map(({ summary, description, start, end, location }, i) => {
-                                const [groups, text] = description.split('|');
+                            .map(({ summary, description, start, end, location, creator }, i) => {
+                                const [text, groups] = description.split('[[');
+                                const items = groups ? groups.split(',') : [];
                                 return (
                                     <li
                                         className='events__item'
@@ -56,16 +60,18 @@ export const Events = () => {
                                     >
                                         <div className='events__item-header'>
                                             <h3 className='events__item-title'>{summary}</h3>
-                                            <span className='events__item-date'>
-                                                {dateRange(start.dateTime, end.dateTime)}&nbsp;
-                                        </span>
-                                            <span className='events__item-location'>
-                                                {location}
-                                            </span>
+                                            <div className='events__item-info'>
+                                                <span className='events__item-date'>
+                                                    {dateRange(start.dateTime, end.dateTime)}&nbsp;
+                                                </span>
+                                                <span className='events__item-location'>
+                                                    {location}
+                                                </span>
+                                            </div>
                                         </div>
                                         <ul className='events__groups'>
                                             {
-                                                groups.split(',').map((group, j) => (
+                                                items.map((group, j) => (
                                                     <li key={j} className='events__group'>
                                                         {group}
                                                     </li>

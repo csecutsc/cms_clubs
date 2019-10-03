@@ -39,9 +39,18 @@
         padding-bottom: 10px;
 
         &-header {
-            @include flex(flex-start, center);
+            @include flex(flex-start);
             flex-wrap: wrap;
             margin-top: 10px;
+        }
+
+        &-info {
+            @include flex(column, flex-start, flex-end);
+            @include media(TABLET) {
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+            }
         }
 
         &-title {
@@ -62,6 +71,9 @@
             color: $PRIMARY;
             font-weight: 800;
             font-size: 1.1rem;
+            @include media(TABLET) {
+                margin-left: auto;
+            }
         }
     }
 
