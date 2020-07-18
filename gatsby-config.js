@@ -3,7 +3,7 @@ module.exports = {
     title: 'CMSClubs',
     keywords: ['CSEC', 'Computer Science Enrichment Club', 'AMACSS', 'UTSC', 'cs', 'UTSC CS', 'UofT CS', 'University of Toronto', 'Scarborough', 'Computer Science'],
     description: 'Your gateway to all things Computer Science, Statistics, and Mathematics at UTSC student CMS clubs.',
-    author: 'Frederic Pun'
+    author: 'Computer Science Enrichment Club'
   },
   plugins: [
     'gatsby-plugin-sharp',
@@ -12,6 +12,7 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-plugin-layout',
     'gatsby-plugin-sass',
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
@@ -81,16 +82,5 @@ module.exports = {
         trackingId: "UA-112733614-3",
       },
     },
-    /* {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        contentTypes: [`article`, `user`, `division`],
-      },
-    }, */
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
   ]
 }
