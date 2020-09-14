@@ -21,6 +21,7 @@ const query = graphql`
                 facebook
                 email
                 discord
+                instagram
             }
         }
     }

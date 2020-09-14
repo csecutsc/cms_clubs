@@ -1,22 +1,36 @@
 [
-	{
-        "name": "CSEC",
-        "secondary": "COMPUTER SCIENCE ENRICHMENT CLUB",
-        "href": "https://csec.club",
-        "content": "The Computer Science Enrichment Club is a student-run group that focuses on helping students with a passion for Computer Science take the next steps in their professional careers. Discover interests you never knew you had through our engaging and exciting monthly seminars on everything from Machine Learning to the World of Work. Students of all displines are welcomed free of charge. Members of our community have had the opportunity to work at major tech firms such as Microsoft, Google, Amazon, Riot Games, Nvidia and more!",
-        "image": "../images/csec.png",
-        "facebook": "https://www.facebook.com/groups/csec2016.utsc/",
-        "email": "csec.utsc@gmail.com",
-        "discord": "https://discord.gg/4tWwRM4"
-	},
-	{
-        "name": " WiCSM",
-        "secondary": "WOMEN IN COMPUTER SCIENCE, STATISTICS AND MATHEMATICS",
-        "href": "https://www.facebook.com/WiCSM.UTSC/",
-        "content": "WiCSM creates communal, academic, and skillful events to create safe place for students to come together & socialize through events. Our main goal is to encourage more women to pursue a degree in Computer Science, Statistics & Mathematics.",
-        "image": "../images/wicsm.jpg",
-        "facebook": "https://www.facebook.com/WiCSM.UTSC/",
-        "email": "wicsm@utsc.utoronto.ca",
-        "discord": ""
-	}
+        {
+                "name": "CSEC",
+                "secondary": "COMPUTER SCIENCE ENRICHMENT CLUB",
+                "href": "https://csec.club",
+                "content": "The Computer Science Enrichment Club is a student-run group that focuses on helping students with a passion for Computer Science take the next steps in their professional careers. Discover interests you never knew you had through our engaging and exciting monthly seminars on everything from Machine Learning to the World of Work. Students of all displines are welcomed free of charge. Members of our community have had the opportunity to work at major tech firms such as Microsoft, Google, Amazon, Riot Games, Nvidia and more!",
+                "image": "../images/csec.png",
+                "facebook": "https://www.facebook.com/groups/csec2016.utsc/",
+                "email": "csec.utsc@gmail.com",
+                "discord": "https://discord.gg/4tWwRM4",
+                "instagram": "https://www.instagram.com/csecutsc/"
+
+        },
+        {
+                "name": " WiCSM",
+                "secondary": "WOMEN IN COMPUTER SCIENCE, STATISTICS AND MATHEMATICS",
+                "href": "https://www.facebook.com/WiCSM.UTSC/",
+                "content": "WiCSM creates communal, academic, and skillful events to create safe place for students to come together & socialize through events. Our main goal is to encourage more women to pursue a degree in Computer Science, Statistics & Mathematics.",
+                "image": "../images/wicsm.jpg",
+                "facebook": "https://www.facebook.com/WiCSM.UTSC/",
+                "email": "wicsm@utsc.utoronto.ca",
+                "discord": "",
+                "instagram": "https://www.instagram.com/wicsm.utsc/"
+        },
+        {
+                "name": " DS3",
+                "secondary": "THE DATA SCIENCE & STATISTICS SOCIETY",
+                "href": "https://www.facebook.com/DS3UTSC/",
+                "content": "The mission of the Data Science and Statistics Society (DS3) is to create a platform for peer-mentorship, career exploration and professional skills development among UTSC students from all disciplines interested in Data Science and Statistics.",
+                "image": "../images/ds3.png",
+                "facebook": "https://www.facebook.com/DS3UTSC/",
+                "email": "thedatasciencecube@gmail.com",
+                "discord": "",
+                "instagram": "https://www.instagram.com/ds3.utsc/"
+        }
 ]
