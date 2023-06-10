@@ -11,7 +11,7 @@
     "@fullcalendar/interaction": "^4.3.0",
     "@fullcalendar/react": "^4.3.0",
     "@fullcalendar/timegrid": "^4.3.0",
-    "gatsby": "^2.24.4",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.14",
     "gatsby-plugin-google-analytics": "^2.1.17",
     "gatsby-plugin-google-fonts": "^1.0.1",
